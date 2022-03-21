@@ -4,7 +4,14 @@ var tabela = document.querySelector(".tabela");
 var fruta = document.querySelector("#frutaInput");
 var botaoAdiciona = document.querySelector("#botaoAdiciona");
 
-botaoAdiciona.addEventListener("click", function(){
+botaoAdiciona.addEventListener("click", function(event){
+
+    if(fruta.value.length == 0){
+
+        return
+        
+    }
+
     var tr = criaTr();
     var td = criaTd();
 

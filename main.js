@@ -1,5 +1,6 @@
 
 var tabela = document.querySelector(".tabela");
+var erro = document.querySelector(".erro")
 
 var fruta = document.querySelector("#frutaInput");
 var botaoAdiciona = document.querySelector("#botaoAdiciona");
@@ -7,10 +8,11 @@ var botaoAdiciona = document.querySelector("#botaoAdiciona");
 botaoAdiciona.addEventListener("click", function(event){
 
     if(fruta.value.length == 0){
-
+        erro.textContent = "[ERRO] escreva algo"
         return
         
     }
+    erro.innerHTML = ""
 
     var tr = criaTr();
     var td = criaTd();
@@ -37,7 +39,7 @@ function criaTd(){
 }
 
 tabela.addEventListener("dblclick", function(event){
-    
+
     event.target.classList.add("invisivel");
 
     setTimeout(function(){

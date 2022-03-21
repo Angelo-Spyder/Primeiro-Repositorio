@@ -67,3 +67,9 @@
     transition: 0.5s;
     opacity: 0;
 }
+.erro{
+    font-size: 15px;
+    text-align: center;
+    padding: 0.5em 0;
+    color: red;
+}

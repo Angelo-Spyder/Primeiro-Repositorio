@@ -19,3 +19,32 @@
     text-align: center;
     padding: 0.5em 0;
 }
+.adicionar{
+    width: 400px;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+#frutaInput{
+    width: 50%;
+    padding: 5px 3px;
+    float: left;
+}
+#botaoAdiciona{
+    width: 40%;
+    margin: 0 15px;
+    padding: 8px 3px;
+    border: none;
+    font-size: 15px;
+    background: orange;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#botaoAdiciona:hover{
+    background: darkorange;
+    color: #c1c1c1;
+}
+.tabela{
+    clear: left ;
+}

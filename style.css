@@ -63,3 +63,7 @@
 .fruta-iten{
     padding: 10px 8px;    
 }
+.invisivel{
+    transition: 0.5s;
+    opacity: 0;
+}

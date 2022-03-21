@@ -35,3 +35,13 @@ function criaTd(){
 
     return td;
 }
+
+tabela.addEventListener("dblclick", function(event){
+    
+    event.target.classList.add("invisivel");
+
+    setTimeout(function(){
+        event.target.remove()
+    },500)
+    
+})

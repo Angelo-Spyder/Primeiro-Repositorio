@@ -47,4 +47,19 @@
 }
 .tabela{
     clear: left ;
+    margin: 1em auto;   
+}
+.info-linha{
+    border: 1px solid black;
+}
+.info-frutas{
+    background: #acacac;
+    padding: 10px 8px;
+    color: white;
+}
+.fruta-linha{
+    border: 1px solid black;
+}
+.fruta-iten{
+    padding: 10px 8px;    
 }

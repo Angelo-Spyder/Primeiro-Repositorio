@@ -1,5 +1,7 @@
 
 var tabela = document.querySelector(".tabela");
+var frutasTr = document.querySelectorAll(".fruta-linha")
+
 var erro = document.querySelector(".erro")
 
 var fruta = document.querySelector("#frutaInput");
@@ -38,12 +40,11 @@ function criaTd(){
     return td;
 }
 
-tabela.addEventListener("dblclick", function(event){
-
-    event.target.classList.add("invisivel");
-
-    setTimeout(function(){
-        event.target.remove()
-    },500)
-    
-})
+frutasTr.forEach(function(fruta){
+    fruta.addEventListener("dblclick", function(event){    
+        event.target.parentNode.classList.add("invisivel");
+        setTimeout(function(){
+            event.target.remove()
+        },500);
+    });
+});

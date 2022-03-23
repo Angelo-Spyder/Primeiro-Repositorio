@@ -1,6 +1,7 @@
 
 var tabela = document.querySelector(".tabela");
 var frutasTr = document.querySelectorAll(".fruta-linha")
+var tabelaConteudo = document.querySelector(".tabelaConteudo")
 
 var erro = document.querySelector(".erro")
 
@@ -20,9 +21,11 @@ botaoAdiciona.addEventListener("click", function(event){
     var td = criaTd();
 
     tr.appendChild(td);
-    tabela.appendChild(tr)
+    tabelaConteudo.appendChild(tr)
+    tabela.appendChild(tabelaConteudo)
 
     fruta.value = ""
+    console.log(tabela)
 });
 
 function criaTr(){
@@ -40,8 +43,8 @@ function criaTd(){
     return td;
 }
 
-frutasTr.forEach(function(fruta){
-    fruta.addEventListener("dblclick", function(event){    
+frutasTr.forEach(function(fr){
+    tabelaConteudo.addEventListener("dblclick", function(event){    
         event.target.parentNode.classList.add("invisivel");
         setTimeout(function(){
             event.target.remove()
